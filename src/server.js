@@ -2,4 +2,6 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 
+require("./routes/tutorial.routes")(app)
+
 app.listen(3001, () => console.log('listening on http://localhost:3001'))
